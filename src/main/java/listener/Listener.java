@@ -9,7 +9,9 @@ import org.testng.Reporter;
 import mavenBase.BaseNew;
 
 public class Listener extends BaseNew implements ITestListener 
-    
+//    created listener class
+
+
     {
 	
 	public void onTestSuccess(ITestResult result) 
