@@ -13,17 +13,18 @@ import mavenUtility.UtilityNew;
 
 public class NeostoxHomePage 
 {
+//	Declaring variables
 	@FindBy(xpath="(//a[text()='OK'])[2]") private WebElement okButton;
 	@FindBy(xpath="(//a[text()='Close'])[5]") private WebElement closeButton;
 	@FindBy(id="lbl_username") private WebElement userName;
 	@FindBy(id="lbl_curbalancetop") private WebElement balance;
 	@FindBy(xpath="//span[text()='Logout']") private WebElement logoutButton;
-	
+//	initializing variables inside the constructor
 	public NeostoxHomePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
-	
+//	usage of variables
 	public void popupHandling(WebDriver driver)
 	{
 		if(okButton.isDisplayed())
