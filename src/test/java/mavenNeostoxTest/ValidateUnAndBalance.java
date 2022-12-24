@@ -44,6 +44,8 @@ public class ValidateUnAndBalance extends BaseNew
 	  UtilityNew.takeScreenshot(driver, home.getUserName(driver));
 	  Reporter.log("verifying un", true);
   }
+  
+  //test case is running
   @Test
   public void CheckBalance() throws InterruptedException
   {
