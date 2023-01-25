@@ -27,6 +27,8 @@ public class TechPandaTest extends Base
 	 home.clickOnMobButton(driver);
 	 Assert.assertEquals(mPage.getMobText(driver), Utility.readDataFromProperyFile("mobText"));
 	 mPage.selectOptions();
+	 Utility.wait(driver, 1);
+	 Utility.takesScreenshot(driver, mPage.getMobText(driver));
 	  
   }
   
